@@ -1,0 +1,42 @@
+ul {
+    line-height: 0.8;
+}
+
+.liens-projets {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    color:#666666;
+    padding-left:5px;
+    margin-left:8px;
+    text-decoration:none;
+}
+
+.liens-projets:hover {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    color:#000000;
+    padding-left:5px;
+    margin-left:8px;
+    text-decoration:none;
+}
+
+.images-titres {
+    width: 30%;
+}
+
+#logo {
+    width: 70%;
+    margin-left:1.5%
+}
+
+.margin-top {
+    margin-top:2%
+}
+
+.margin-left {
+    margin-left:3%
+}
+
+.margin-mini-left {
+    margin-left:2%
+}
