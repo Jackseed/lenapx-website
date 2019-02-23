@@ -2,10 +2,24 @@ export interface Projet {
   section: string;
   titre: string;
   lien: string;
+  description: string[];
+  images: string[];
 }
 
 export const PROJETS = [
-    { section: 'graphisme', titre: 'Le Monde des enfants', lien: 'lemondedesenfants' },
+    { section: 'graphisme',
+    titre: 'Le Monde des enfants',
+    lien: 'lemondedesenfants',
+    description: [
+      'Conception d\'un supplément hebdomadaire au journal Le Monde.',
+      'Le Monde des Enfants, pour expliquer l\'actualité aux enfants avec des mots simples : C\'est où la  Syrie ?',
+// tslint:disable-next-line: max-line-length
+      'Et pourquoi on en parle ? Papa, un coeur greffé il peut tomber amoureux ? Et pourquoi il fait si froid à Chigaco alors qu\'on dit que la terre elle se réchauffe ?',
+      '',
+      'La Cambre, 2014.'],
+    images: ['lmde_1.jpg', 'lmde_2.jpg', 'lmde_3.jpg', 'lmde_4.jpg', 'lmde_5.jpg', 'lmde_6.jpg']
+    },
+    /*
     { section: 'graphisme', titre: 'College 75', lien: 'college75' },
     { section: 'graphisme', titre: 'Chill, Farm & Sun', lien: 'chillfarmandsun' },
     { section: 'graphisme', titre: 'Les Silences de Palomar', lien: 'palomar' },
@@ -31,4 +45,5 @@ export const PROJETS = [
     { section: 'animation', titre: 'Matabase', lien: 'matabase' },
     { section: 'animation', titre: 'Saul Bass\'s Walk to Chaumont', lien: 'saulbasswalk' },
     { section: 'animation', titre: 'ReadMyBook - animation', lien: 'readmybookgif' },
+  */
   ];
