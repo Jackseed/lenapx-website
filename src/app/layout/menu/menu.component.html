@@ -1,6 +1,6 @@
-<img id="logo" class="images-titres margin-mini-left" src='assets/img/logoweb.jpg'> 
+
 <div *ngFor="let titre of imageTitres">
-    <img class="images-titres margin-left margin-top" src='assets/img/{{titre.image}}'> 
+    <img class="images-titres margin-left margin-top margin-bottom" src='assets/img/{{titre.image}}'> 
     <ul *ngFor="let projet of projets">
         <ng-container *ngIf="projet.section === titre.section">
             <a class="liens-projets" routerLink="/{{projet.lien}}">
