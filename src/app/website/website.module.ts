@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UiModule } from '../shared/ui/ui.module';
+import { UiModule } from '../layout/ui.module';
 import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({

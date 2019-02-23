@@ -4,10 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './layout/menu/menu.component';
-import { UiModule } from './shared/ui/ui.module';
+import { UiModule } from './layout/ui.module';
 import { AppRoutingModule } from './app-routing.module';
 import { WebsiteModule } from './website/website.module';
-import { GridComponent } from './website/containers/grid/grid.component';
+import { GridComponent } from './website/grid/grid.component';
 
 
 @NgModule({
