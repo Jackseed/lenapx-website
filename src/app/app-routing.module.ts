@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MenuComponent } from './layout/menu/menu.component';
+import { ProjectPageComponent } from './website/project-page/project-page.component';
+import { GridComponent } from './website/grid/grid.component';
 
 const routes: Routes = [
-  { path: ':title', component: MenuComponent }
+  { path: '', component: GridComponent },
+  { path: ':title', component: ProjectPageComponent }
 ];
 
 @NgModule({
