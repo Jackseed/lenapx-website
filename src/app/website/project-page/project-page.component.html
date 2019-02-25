@@ -1,5 +1,38 @@
 <p class="titre-projets">{{ (project$ | async).titre }}</p>
 <p class="description-projets" *ngFor="let description of (project$ | async).description"> {{ description }}</p>
+<br />
+<p class="signature-projets" *ngFor="let signatureprojet of (project$ | async).signature_projet"> {{ signatureprojet }}</p>
+
 <div *ngFor="let image of (project$ | async).images">   
     <img class="images-projet" src='assets/img/{{image}}'> 
 </div>
+
+<p class="legende-projets" *ngFor="let legende of (project$ | async).legende1"> {{ legende }}</p>
+<div *ngFor="let image of (project$ | async).images1">   
+    <img class="images-projet" src='assets/img/{{image}}'> 
+</div>
+
+<p class="legende-projets" *ngFor="let legende of (project$ | async).legende2"> {{ legende }}</p>
+<div *ngFor="let image of (project$ | async).images2">   
+    <img class="images-projet" src='assets/img/{{image}}'> 
+</div>
+
+<p class="legende-projets" *ngFor="let legende of (project$ | async).legende3"> {{ legende }}</p>
+<div *ngFor="let image of (project$ | async).images3">   
+    <img class="images-projet" src='assets/img/{{image}}'> 
+</div>
+
+<p class="legende-projets" *ngFor="let legende of (project$ | async).legende4"> {{ legende }}</p>
+<div *ngFor="let image of (project$ | async).images4">   
+    <img class="images-projet" src='assets/img/{{image}}'> 
+</div>
+
+<p class="legende-projets" *ngFor="let legende of (project$ | async).legende5"> {{ legende }}</p>
+<div *ngFor="let image of (project$ | async).images5">   
+    <img class="images-projet" src='assets/img/{{image}}'> 
+</div>
+
+<p class="legende-projets" *ngFor="let legende of (project$ | async).legende_finale"> {{ legende }}</p>
+<br />
+<p class="copyright" align="center">{{ (project$ | async).copyright }}</p>
+<p class="signature" align="center">{{ (project$ | async).signature }}</p>
