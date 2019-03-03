@@ -19,7 +19,8 @@ export class MenuComponent implements OnInit {
   public imageTitres: ImageTitre[] = [
     {section: 'graphisme', image: 'menu-graphisme.jpg'},
     {section: 'illustration', image: 'menu-illustration.jpg'},
-    {section: 'animation', image: 'menu-animation.jpg'}
+    {section: 'animation', image: 'menu-animation.jpg'},
+    {section: 'contact', image: 'menu-contact.jpg'}
   ];
 
   public projets: Projet[] = PROJETS;

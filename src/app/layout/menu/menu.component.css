@@ -15,15 +15,21 @@ ul {
 }
 
 .images-titres1 {
-    width: 45%;
+    height: 30px;
     margin-left:3%;
     margin-top:0%;
     margin-bottom:2%;
 }
 
 .images-titres {
-    width: 45%;
+    height: 30px;
     margin-left:3%;
     margin-top:7%;
     margin-bottom:2%;
+}
+
+.images-contact {
+    height: 30px;
+    margin-left:3%;
+    width: 33px;
 }

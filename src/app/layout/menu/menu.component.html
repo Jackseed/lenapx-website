@@ -1,7 +1,7 @@
 
 <div *ngFor="let titre of imageTitres; let i= index;">
     
-    <!-- IMAGE TITRE SECTION -->
+    <!-- IMAGE TITRE DES SECTIONS -->
     <img [class.images-titres1]="i === 0" [class.images-titres]="i > 0" src='assets/img/{{titre.image}}'> 
     
     <!-- TITRE DES PROJETS PAR SECTION -->
@@ -13,4 +13,12 @@
         </ng-container>
     </ul>
 
+</div>
+<div>
+    <a href="http://instagram.com/lenapiroux" target="_blank">
+        <img class="images-contact" src="assets/img/instalena.jpg" alt="Contactez-moi!">
+    </a>
+    <a href="mailto:atelier@lenapiroux.com">
+        <img class="images-contact" src="assets/img/mail.jpg" alt="Contactez-moi!">
+    </a>
 </div>
