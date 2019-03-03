@@ -1,20 +1,21 @@
-<div fxLayout="row" class="padding-top">
+<!-- DIV ENGLOBANT TOUTE L'APP -->
+<div fxLayout="row" class="app-container">
     <div fxFlex="60%" fxFlexOffset="20%">
+        
         <div fxLayout="row">
-            <div fxFlex="33%">
+            <!-- DIV ENGLOBANT LE MENU -->
+            <div fxFlex="33%" class="menu-container">
                 <a routerLink="home">
-                <img id="logo" class="images-titres margin-mini-left" src='assets/img/logoweb.jpg'>
+                    <img id="logo" class="images-titres margin-mini-left" src='assets/img/logoweb.jpg'>
                 </a>
-            </div>
-            <div fxFlex="67%"></div>
-        </div>
-        <div fxLayout="row">
-            <div fxFlex= "33%">
                 <app-menu></app-menu>
             </div>
-            <div fxFlex="67%">
+
+            <!-- DIV ENGLOBANT LA GRILLE ET LES PAGES PROJET -->
+            <div fxFlex="67%" class="content-container">
                 <router-outlet></router-outlet>
             </div> 
+
         </div>
     </div>    
 </div>
