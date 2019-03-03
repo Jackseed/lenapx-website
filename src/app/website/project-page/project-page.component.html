@@ -1,8 +1,8 @@
 <!-- TITRE ET PRESENTATION DU PROJET -->
-<p class="titre-projets">{{ (project$ | async).titre }}</p>
+<h1 class="titre-projets">{{ (project$ | async).titre }}</h1>
 <p class="description-projets" *ngFor="let description of (project$ | async).description">{{ description }}</p>
 <br />
-<p class="signature-projets"> {{ (project$ | async).signature_projet }}</p>
+<h3> {{ (project$ | async).signature_projet }}</h3>
 
 <!-- PREMIER GROUPE D'IMAGES -->
 <div *ngFor="let image of (project$ | async).images">  
@@ -77,6 +77,6 @@
 
 <!-- FOOTER -->
 <div class="footer">
-    <p>{{ (project$ | async).copyright }}</p>
-    <p><b>{{ (project$ | async).signature }}</b></p>
+    <h3>{{ (project$ | async).copyright }}</h3>
+    <h3 class="signature">{{ (project$ | async).signature }}</h3>
 </div>

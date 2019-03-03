@@ -1,8 +1,36 @@
 * {
     margin:0;
     padding:0;
+    font-family: Helvetica, sans-serif;
+
+}
+
+h1 {
+    font-size: 12px;
+    font-weight:bold;
+    padding-bottom:3px;
+}
+
+p {
+    font-size: 10px;
+}
+
+h3 {
+    font-size: 9px;
+    font-weight: normal;
 }
 
 .padding-top {
     padding-top: 4%;
+}
+
+.footer {
+    padding-bottom:20px;
+    padding-top:40px;
+    color:#a4a4a4;
+    text-align: center;
+}
+
+.signature {
+    font-weight:bold;
 }

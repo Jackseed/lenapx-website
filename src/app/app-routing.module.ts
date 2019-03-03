@@ -4,7 +4,8 @@ import { ProjectPageComponent } from './website/project-page/project-page.compon
 import { GridComponent } from './website/grid/grid.component';
 
 const routes: Routes = [
-  { path: '', component: GridComponent },
+  { path: 'home', component: GridComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: ':title', component: ProjectPageComponent }
 ];
 
