@@ -10,6 +10,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./project-page.component.css']
 })
 export class ProjectPageComponent implements OnInit {
+
   public project$: Observable<Projet>;
 
   constructor(
