@@ -1,11 +1,14 @@
 
 <mat-grid-list cols="4" gutterSize="1">
+  
   <mat-grid-tile *ngFor="let vignette of vignettes">
+    
     <a routerLink="/{{vignette.lien}}">
-    <img class="vignettes" src='assets/img/{{vignette.image}}' alt='{{vignette.alt}}'>
+      <img class="vignettes" src='assets/img/{{vignette.image}}' alt='{{vignette.alt}}'>
     </a>
 
   </mat-grid-tile>
+
 </mat-grid-list>
 
 <!-- FOOTER -->

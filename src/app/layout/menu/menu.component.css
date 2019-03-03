@@ -3,7 +3,6 @@ ul {
 }
 
 .liens-projets {
-    font-family: Helvetica, sans-serif;
     font-size: 11px;
     color:#666666;
     padding-left:5px;
@@ -12,31 +11,19 @@ ul {
 }
 
 .liens-projets:hover {
-    font-family: Helvetica, sans-serif;
-    font-size: 11px;
     color:#000000;
-    padding-left:5px;
-    margin-left:8px;
-    text-decoration:none;
+}
+
+.images-titres1 {
+    width: 45%;
+    margin-left:3%;
+    margin-top:0%;
+    margin-bottom:2%;
 }
 
 .images-titres {
     width: 45%;
-}
-
-.margin-top {
-    margin-top:2%
-}
-
-.margin-bottom {
-    margin-bottom:2%
-}
-
-
-.margin-left {
-    margin-left:3%
-}
-
-.margin-mini-left {
-    margin-left:2%
+    margin-left:3%;
+    margin-top:7%;
+    margin-bottom:2%;
 }

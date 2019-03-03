@@ -1,6 +1,10 @@
 
-<div *ngFor="let titre of imageTitres">
-    <img class="images-titres margin-left margin-top margin-bottom" src='assets/img/{{titre.image}}'> 
+<div *ngFor="let titre of imageTitres; let i= index;">
+    
+    <!-- IMAGE TITRE SECTION -->
+    <img [class.images-titres1]="i === 0" [class.images-titres]="i > 0" src='assets/img/{{titre.image}}'> 
+    
+    <!-- TITRE DES PROJETS PAR SECTION -->
     <ul *ngFor="let projet of projets">
         <ng-container *ngIf="projet.section === titre.section">
             <a class="liens-projets" routerLink="/{{projet.lien}}">
@@ -8,4 +12,5 @@
             </a>
         </ng-container>
     </ul>
+
 </div>
