@@ -1,5 +1,34 @@
-<mat-toolbar color="primary">My App</mat-toolbar>
-
+<mat-toolbar color="primary">
+    <button mat-button mat-icon-button [matMenuTriggerFor]="menu" class="lena-menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <div *ngFor="let titre of imageTitres; let i= index;">
+            <!-- IMAGE TITRE DES SECTIONS -->
+            <img [class.images-titres1]="i === 0" [class.images-titres]="i > 0" src='assets/img/{{titre.image}}'> 
+            
+            <!-- TITRE DES PROJETS PAR SECTION -->
+            <ul *ngFor="let projet of projets">
+                <ng-container *ngIf="projet.section === titre.section">
+                    <a class="liens-projets" routerLink="/{{projet.lien}}">
+                        <span>{{projet.titre}}</span>
+                    </a>
+                </ng-container>
+            </ul>
+        </div>
+        <div>
+            <a href="http://instagram.com/lenapiroux" target="_blank">
+                <img class="images-contact" src="assets/img/instalena.jpg" alt="Contactez-moi!">
+            </a>
+            <a href="mailto:atelier@lenapiroux.com">
+                <img class="images-contact" src="assets/img/mail.jpg" alt="Contactez-moi!">
+            </a>
+        </div>
+    </mat-menu>
+    <a routerLink="home" class="centered">
+        <img id="logo-toolbar" class="images-titres margin-mini-left" src='assets/img/logoweb.jpg'>
+    </a>
+</mat-toolbar>
 
 <!-- DIV ENGLOBANT TOUTE L'APP -->
 <div fxLayout="row" class="app-container">
@@ -9,7 +38,7 @@
             <!-- DIV ENGLOBANT LE MENU -->
             <div fxFlex="33%" class="menu-container">
                 <a routerLink="home">
-                    <img id="logo" class="images-titres margin-mini-left" src='assets/img/logoweb.jpg'>
+                    <img id="logo" class="images-titres" src='assets/img/logoweb.jpg'>
                 </a>
                 <app-menu></app-menu>
             </div>

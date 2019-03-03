@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Projet, PROJETS } from 'src/app/models/project-list';
-
-
-
-export interface ImageTitre {
-  section: string;
-  image: string;
-}
+import { ImageTitre, TITRES_MENU } from 'src/app/models/titres-menu';
 
 @Component({
   selector: 'app-menu',
@@ -16,13 +10,7 @@ export interface ImageTitre {
 
 export class MenuComponent implements OnInit {
 
-  public imageTitres: ImageTitre[] = [
-    {section: 'graphisme', image: 'menu-graphisme.jpg'},
-    {section: 'illustration', image: 'menu-illustration.jpg'},
-    {section: 'animation', image: 'menu-animation.jpg'},
-    {section: 'contact', image: 'menu-contact.jpg'}
-  ];
-
+  public imageTitres: ImageTitre[] = TITRES_MENU;
   public projets: Projet[] = PROJETS;
 
 
