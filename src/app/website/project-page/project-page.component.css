@@ -42,7 +42,7 @@
         font-family: Helvetica, sans-serif;
         font-size: 10px;
         padding-bottom:0px;
-        padding-top:0px;
+        padding-top:30px;
         padding-left:0px;
         color:#666666;
         text-align:center;
@@ -67,22 +67,12 @@
         padding-top:0px;
         padding-left:0px;
     }
-    .copyright {
-        font-family: Helvetica, sans-serif;
-        font-size: 9px;
-        padding-bottom:0px;
-        padding-top:0px;
-        padding-left:33px;
-        padding-right:33px;
-    }
-    
-    
-    .signature {
+
+    .footer{
         font-family: Helvetica, sans-serif;
         font-size: 9px;
         padding-bottom:20px;
-        padding-top:0px;
-        padding-left:33px;
-        padding-right:33px;
-        font-weight: bold;
+        padding-top:40px;
+        color:#a4a4a4;
+        text-align: center;
     }
