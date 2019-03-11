@@ -1,4 +1,4 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" fxShow.gt-xs=false>
     <button mat-button mat-icon-button [matMenuTriggerFor]="menu" class="lena-menu">
         <mat-icon>menu</mat-icon>
     </button>
@@ -32,11 +32,11 @@
 
 <!-- DIV ENGLOBANT TOUTE L'APP -->
 <div fxLayout="row" class="app-container">
-    <div fxFlex="60%" fxFlexOffset="20%">
+    <div fxFlex.xs="100%" fxFlexOffset.sm="10%" fxFlex.sm="80%" fxFlexOffset.md="15%" fxFlex.md="85%" fxFlexOffset.lg="20%" fxFlex.lg="60%">
         
         <div fxLayout="row">
             <!-- DIV ENGLOBANT LE MENU -->
-            <div fxFlex="33%" class="menu-container">
+            <div fxFlex="33%" class="menu-container" fxHide.xs=true>
                 <a routerLink="home">
                     <img id="logo" class="images-titres" src='assets/img/logoweb.jpg'>
                 </a>
@@ -44,7 +44,7 @@
             </div>
 
             <!-- DIV ENGLOBANT LA GRILLE ET LES PAGES PROJET -->
-            <div fxFlex="67%" class="content-container">
+            <div fxFlex="67%" fxFlex.xs="100%" [ngClass]="{'content-container': !media.isActive('xs')}">
                 <router-outlet></router-outlet>
             </div> 
 

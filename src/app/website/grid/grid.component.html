@@ -1,5 +1,5 @@
 
-<mat-grid-list cols="4" gutterSize="1">
+<mat-grid-list [cols]="cols | async" gutterSize="1">
   
   <mat-grid-tile *ngFor="let vignette of vignettes">
     
