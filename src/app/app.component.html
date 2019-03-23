@@ -1,53 +1,55 @@
-<mat-toolbar color="primary" fxShow.gt-xs=false>
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu" class="menu-lena" fxFlex="100">
-        <div *ngFor="let titre of imageTitres; let i= index;">
-            <!-- IMAGE TITRE DES SECTIONS -->
-            <img class="images-titres" src='assets/img/{{titre.image}}'> 
-            
-            <!-- TITRE DES PROJETS PAR SECTION -->
-            <ul *ngFor="let projet of projets">
-                <ng-container *ngIf="projet.section === titre.section">
-                    <button mat-menu-item class="liens-projets" routerLink="/{{projet.lien}}">
-                       {{projet.titre}}
-                    </button>
-                </ng-container>
-            </ul>
-        </div>
-        <div>
-            <a href="http://instagram.com/lenapiroux" target="_blank">
-                <img src="assets/img/instalena.jpg" alt="Contactez-moi!">
-            </a>
-            <a href="mailto:atelier@lenapiroux.com">
-                <img src="assets/img/mail.jpg" alt="Contactez-moi!">
-            </a>
-        </div>
-    </mat-menu>
-    <a routerLink="home">
-        <img id="logo-toolbar" src='assets/img/logoweb.jpg'>
-    </a>
-</mat-toolbar>
-
-<!-- DIV ENGLOBANT TOUTE L'APP -->
-<div fxLayout="row" class="app-container">
-    <div fxFlex.xs="100%" fxFlexOffset.sm="10%" fxFlex.sm="80%" fxFlexOffset.md="15%" fxFlex.md="85%" fxFlexOffset.lg="20%" fxFlex.lg="60%">
-        
-        <div fxLayout="row">
-            <!-- DIV ENGLOBANT LE MENU -->
-            <div fxFlex="33%" class="menu-container" fxHide.xs=true>
-                <a routerLink="home">
-                    <img id="logo" class="images-titres" src='assets/img/logoweb.jpg'>
-                </a>
-                <app-menu></app-menu>
+<div class="full-container">
+    <mat-toolbar color="primary" fxShow.gt-xs=false class="toolbar">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" class="menu-lena" fxFlex="100">
+            <div *ngFor="let titre of imageTitres; let i= index;">
+                <!-- IMAGE TITRE DES SECTIONS -->
+                <img class="images-titres" src='assets/img/{{titre.image}}'> 
+                
+                <!-- TITRE DES PROJETS PAR SECTION -->
+                <ul *ngFor="let projet of projets">
+                    <ng-container *ngIf="projet.section === titre.section">
+                        <button mat-menu-item class="liens-projets" routerLink="/{{projet.lien}}">
+                        {{projet.titre}}
+                        </button>
+                    </ng-container>
+                </ul>
             </div>
+            <div>
+                <a href="http://instagram.com/lenapiroux" target="_blank">
+                    <img class="images-contact" src="assets/img/instalena.jpg" alt="Contactez-moi!">
+                </a>
+                <a href="mailto:atelier@lenapiroux.com">
+                    <img class="images-contact" src="assets/img/mail.jpg" alt="Contactez-moi!">
+                </a>
+            </div>
+        </mat-menu>
+        <a routerLink="home">
+            <img id="logo-toolbar" src='assets/img/logoweb.jpg'>
+        </a>
+    </mat-toolbar>
 
-            <!-- DIV ENGLOBANT LA GRILLE ET LES PAGES PROJET -->
-            <div fxFlex="67%" fxFlex.xs="100%" [ngClass]="{'content-container': !media.isActive('xs')}">
-                <router-outlet></router-outlet>
-            </div> 
+    <!-- DIV ENGLOBANT TOUTE L'APP -->
+    <div fxLayout="row" class="app-container">
+        <div fxFlex.xs="100%" fxFlexOffset.sm="10%" fxFlex.sm="80%" fxFlexOffset.md="15%" fxFlex.md="85%" fxFlexOffset.lg="20%" fxFlex.lg="60%">
+            
+            <div fxLayout="row">
+                <!-- DIV ENGLOBANT LE MENU -->
+                <div fxFlex="33%" class="menu-container" fxHide.xs=true>
+                    <a routerLink="home">
+                        <img id="logo" class="images-titres" src='assets/img/logoweb.jpg'>
+                    </a>
+                    <app-menu></app-menu>
+                </div>
 
-        </div>
-    </div>    
+                <!-- DIV ENGLOBANT LA GRILLE ET LES PAGES PROJET -->
+                <div fxFlex="67%" fxFlex.xs="100%" [ngClass]="{'content-container': !media.isActive('xs')}">
+                    <router-outlet></router-outlet>
+                </div> 
+
+            </div>
+        </div>    
+    </div>
 </div>
