@@ -1,6 +1,29 @@
-div.lena-menu {
-    max-width: 1000px;
-    background-color:lightgreen;
+.mat-menu-panel.menu-lena {
+    max-width:none;
+    width: 100vw; 
+    margin-left: -8px;
+    overflow: visible;
+}
+
+.mat-menu-item {
+    color: black;
+    font-size: 15px;
+}
+
+button.mat-menu-item{
+    background-color: white;
+    text-align: center;
+}
+
+button.mat-menu-item:hover {
+    font-weight: bold !important; 
+    background-color: white !important;
+}
+
+.images-titres{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
 }
 
 #logo {
@@ -9,15 +32,11 @@ div.lena-menu {
 }
 
 #logo-toolbar {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: -120px;
+    width: 100%;
 }
 
-.centered {
-    display: block;
-    margin: 0 auto;
-}
 
 .app-container {
     padding-top: 4%;

@@ -1,32 +1,32 @@
 <mat-toolbar color="primary" fxShow.gt-xs=false>
-    <button mat-button mat-icon-button [matMenuTriggerFor]="menu" class="lena-menu">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon>menu</mat-icon>
     </button>
-    <mat-menu #menu="matMenu">
+    <mat-menu #menu="matMenu" class="menu-lena" fxFlex="100">
         <div *ngFor="let titre of imageTitres; let i= index;">
             <!-- IMAGE TITRE DES SECTIONS -->
-            <img [class.images-titres1]="i === 0" [class.images-titres]="i > 0" src='assets/img/{{titre.image}}'> 
+            <img class="images-titres" src='assets/img/{{titre.image}}'> 
             
             <!-- TITRE DES PROJETS PAR SECTION -->
             <ul *ngFor="let projet of projets">
                 <ng-container *ngIf="projet.section === titre.section">
-                    <a class="liens-projets" routerLink="/{{projet.lien}}">
-                        <span>{{projet.titre}}</span>
-                    </a>
+                    <button mat-menu-item class="liens-projets" routerLink="/{{projet.lien}}">
+                       {{projet.titre}}
+                    </button>
                 </ng-container>
             </ul>
         </div>
         <div>
             <a href="http://instagram.com/lenapiroux" target="_blank">
-                <img class="images-contact" src="assets/img/instalena.jpg" alt="Contactez-moi!">
+                <img src="assets/img/instalena.jpg" alt="Contactez-moi!">
             </a>
             <a href="mailto:atelier@lenapiroux.com">
-                <img class="images-contact" src="assets/img/mail.jpg" alt="Contactez-moi!">
+                <img src="assets/img/mail.jpg" alt="Contactez-moi!">
             </a>
         </div>
     </mat-menu>
-    <a routerLink="home" class="centered">
-        <img id="logo-toolbar" class="images-titres margin-mini-left" src='assets/img/logoweb.jpg'>
+    <a routerLink="home">
+        <img id="logo-toolbar" src='assets/img/logoweb.jpg'>
     </a>
 </mat-toolbar>
 
