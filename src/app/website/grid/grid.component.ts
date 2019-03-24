@@ -41,8 +41,6 @@ export class GridComponent implements OnInit {
     });
     this.cols = this.media.asObservable().pipe(
       map(change => {
-        console.log(change);
-        console.log(grid.get(change.mqAlias));
         return grid.get(change.mqAlias);
       }),
       startWith(start)
