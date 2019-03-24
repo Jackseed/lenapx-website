@@ -1,3 +1,7 @@
 .vignettes {
-    width: 110px;
+    width: 150px;
+}
+
+.vignettes-sm {
+    width: 100%;
 }
