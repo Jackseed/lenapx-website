@@ -1,4 +1,4 @@
-
+<div [class.container-sm]="((mediaWidth == 'xs')||(mediaWidth == 'sm'))" [class.container]="(mediaWidth != 'xs') && (mediaWidth != 'sm') ">
 <mat-grid-list [cols]="cols | async" gutterSize="0px">
   <mat-grid-tile *ngFor="let vignette of vignettes">
     <a routerLink="/{{vignette.lien}}">
@@ -11,4 +11,5 @@
 <div class="footer">
     <h3>Graphisme - Illustration</h3>
     <h3 class="signature">Léna Piroux 2019</h3>
+</div>
 </div>

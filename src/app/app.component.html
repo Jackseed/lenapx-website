@@ -39,11 +39,11 @@
 
     <!-- DIV ENGLOBANT TOUTE L'APP -->
     <div fxLayout="row" class="app-container">
-        <div fxFlex.lt-md="100%" fxFlexOffset.gt-sm="20%" fxFlex.gt-sm="60%">
+        <div fxFlex.lt-md="100%">
             
             <div fxLayout="row">
                 <!-- DIV ENGLOBANT LE MENU -->
-                <div fxFlex="33%" class="menu-container" fxHide.lt-md=true>
+                <div class="menu-container" fxHide.lt-md=true>
                     <a routerLink="home">
                         <img id="logo" class="images-titres" src='assets/img/logoweb.jpg'>
                     </a>
@@ -51,7 +51,7 @@
                 </div>
 
                 <!-- DIV ENGLOBANT LA GRILLE ET LES PAGES PROJET -->
-                <div fxFlex="67%" fxFlex.lt-md="100%" [ngClass]="{'content-container': !media.isActive('xs') && !media.isActive('sm')}">
+                <div fxFlex.lt-md="100%" [ngClass]="{'content-container': !media.isActive('xs') && !media.isActive('sm')}">
                     <router-outlet></router-outlet>
                 </div> 
 

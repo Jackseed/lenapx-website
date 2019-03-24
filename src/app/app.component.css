@@ -1,5 +1,6 @@
 body{
     height: 100%;
+    display: block;
 }
 
 .full-container{
@@ -67,15 +68,20 @@ button.mat-menu-item:hover {
 
 .app-container {
     padding-top: 4%;
+    width: 900px;
+    display: block;
+    margin: auto;
 }
 
 .menu-container {
-    position: fixed;
-    width: 250px;
+    display: block;
+    float: left;
+    margin-right:40px;
 }
 
 .content-container {
     margin-top: 80px;
-    margin-left: 250px;
+    display: block;
+    float: left;
 }
 

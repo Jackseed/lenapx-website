@@ -5,3 +5,10 @@
 .vignettes-sm {
     width: 100%;
 }
+.container {
+    width: 600px;
+}
+
+.container-sm {
+    width: 100%;
+}
