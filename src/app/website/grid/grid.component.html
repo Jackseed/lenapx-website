@@ -1,8 +1,8 @@
-<div [class.container-sm]="((mediaWidth == 'xs')||(mediaWidth == 'sm'))" [class.container]="(mediaWidth != 'xs') && (mediaWidth != 'sm') ">
+<div ngClass.lt-md="container-mobile" ngClass.gt-sm="container">
 <mat-grid-list [cols]="cols | async" gutterSize="0px">
   <mat-grid-tile *ngFor="let vignette of vignettes">
-    <a routerLink="/{{vignette.lien}}">
-      <img [class.vignettes-sm]="((mediaWidth == 'xs')||(mediaWidth == 'sm'))" [class.vignettes]="(mediaWidth != 'xs') && (mediaWidth != 'sm') " src='assets/img/{{vignette.image}}' alt='{{vignette.alt}}'>
+    <a routerLink="/{{vignette.lien}}" ngStyle.lt-md="height:100%; width:100%;">
+      <img style="width: 150px;" ngStyle.lt-md="width:100%;" src='assets/img/{{vignette.image}}' alt='{{vignette.alt}}'>
     </a>
   </mat-grid-tile>
 </mat-grid-list>
