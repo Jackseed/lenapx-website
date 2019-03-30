@@ -1,4 +1,7 @@
 .container {
+    position:sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top:75px;
     width: 240px;
 }
 ul {

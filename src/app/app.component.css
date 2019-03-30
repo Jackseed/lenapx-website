@@ -60,8 +60,12 @@ button.mat-menu-item:hover {
 }
 
 #logo {
-    width: 80%;
-    margin-left:1.5%
+    width: 200px;
+    margin-left:1.5%;
+    position:sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top:0;
+    display: block;
 }
 
 .app-container-desktop {
@@ -74,7 +78,6 @@ button.mat-menu-item:hover {
 .menu-container {
     display: block;
     float: left;
-    margin-right:40px;
 }
 
 .content-container-desktop {

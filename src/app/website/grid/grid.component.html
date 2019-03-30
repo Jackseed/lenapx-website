@@ -1,8 +1,8 @@
-<div ngClass.lt-md="container-mobile" ngClass.gt-sm="container">
+<div ngClass.sm="container-xs" ngClass.sm="container-sm" ngClass.gt-sm="container">
 <mat-grid-list [cols]="tile.cols" [gutterSize]="tile.gutterSize">
   <mat-grid-tile *ngFor="let vignette of vignettes">
-    <a routerLink="/{{vignette.lien}}" ngStyle.lt-md="height:100%; width:100%;">
-      <img style="width: 150px;" ngStyle.lt-md="width:100%;" src='assets/img/{{vignette.image}}' alt='{{vignette.alt}}'>
+    <a routerLink="/{{vignette.lien}}" ngClass.gt-sm="vignettes" ngClass.lt-md="vignettes-mobile">
+      <img ngClass.gt-sm="vignettes" ngClass.lt-md="vignettes-mobile" src='assets/img/{{vignette.image}}' alt='{{vignette.alt}}'>
     </a>
   </mat-grid-tile>
 </mat-grid-list>

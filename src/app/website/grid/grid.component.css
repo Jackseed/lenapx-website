@@ -1,14 +1,21 @@
 .vignettes {
-    width: 150px;
+    width: 110px;
 }
 
 .vignettes-mobile {
     width: 100%;
 }
 .container {
-    width: 600px;
+    width: 500px;
 }
 
-.container-mobile {
+.container-sm {
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 5%;
+    width: 90%;
+}
+
+.container-xs {
     width: 100%;
 }
